@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" type="text/css" href="outeruse/css/normalize.css">
+        <link rel="stylesheet" type="text/css" href="outeruse/css/grid.css">
+        <link rel="stylesheet" type="text/css" href="outeruse/css/ionicons.min.css">
+        <link rel="stylesheet" type="text/css" href="resources/css/stylef.css">
+        <link href="https://fonts.googleapis.com/css?family=Lato:100,300,300i,400&display=swap" rel="stylesheet">
+       <head>
+            <title>Add Team</title>
+             <script type="text/javascript">
+        function validate()
+        {
+            var name=document.add_team.username.value;
+            if(name==" "){
+                alert("ENTER A NAME");
+                return false;
+            }
+            else{
+                alert("Successfully Registered");
+                return true;
+            }
+        }
+        </script>
+        </head>
+        <body>
+            <header>
+                 <div class="row">   
+                <img src="resources/img/cec57895-2957-4592-b38f-4021971b3cb3_200x200.png" alt="CricPlay" class="logo">
+                </div>
+                <div class="login-page">
+                    <div class="form">
+            <form name="add_player" onsubmit="return validate();">
+        
+                <input type="text" style="margin:0 auto; display:block; padding:8px;" name="age" placeholder="PLAYER NAME">
+                <input type="text" style="margin:0 auto; display:block; padding:8px;" name="age" placeholder="AGE">
+             
+                <input type="text" style="margin:0 auto; display:block; padding:8px;" name="nationality" placeholder="NATIONALITY">
+           
+                <input type="text" style="margin:0 auto; display:block; padding:8px;" name="position" placeholder="POSITION">
+              
+                <input type="text" style="margin:0 auto; display:block; padding:8px;" name="matches" placeholder="MATCHES PLAYED">
+                
+                <input type="text" style="margin:0 auto; display:block; padding:8px;" name="hundereds" placeholder="100s">
+                    
+               
+                <input type="text" style="margin:0 auto; display:block; padding:8px;" name="fiftys" placeholder="50s">
+                  
+            
+                <input type="text" style="margin:0 auto; display:block; padding:8px;" name="srate" placeholder="STRIKE RATE">
+                    
+                <input type="text" style="margin:0 auto; display:block; padding:8px;" name="runs" placeholder="RUNS">
+                   
+                <input type="text" style="margin:0 auto; display:block; padding:8px;" name="avg" placeholder="AVERAGE">
+                
+                <div style="text-align: center" >
+                <button type="submit" name="submit" value="Register" class="button">REGISTER</button>
+                </div>
+                
+            </form>
+                    </div>
+                </div>
+            </header>
+        </body>
+        </html>
